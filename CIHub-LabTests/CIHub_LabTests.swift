@@ -7,7 +7,6 @@
 //
 
 import XCTest
-@testable import CIHub_Lab
 
 class CIHub_LabTests: XCTestCase {
     

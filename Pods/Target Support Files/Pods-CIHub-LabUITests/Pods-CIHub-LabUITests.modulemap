@@ -1,0 +1,6 @@
+framework module Pods_CIHub_LabUITests {
+  umbrella header "Pods-CIHub-LabUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
