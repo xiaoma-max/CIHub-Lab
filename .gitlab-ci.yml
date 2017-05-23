@@ -5,8 +5,8 @@ stages:
 build_project:
   stage: build
   script:
-    - xcodebuild clean -project CIHub-Lab.xcodeproj -scheme CIHub-Lab | xcpretty
-    - xcodebuild test -project CIHub-Lab.xcodeproj -scheme CIHub-Lab -destination 'platform=iOS Simulator,name=iPhone 7,OS=10.2' | xcpretty -s
+    - xcodebuild clean -workspace CIHub-Lab.xcworkspace -scheme CIHub-Lab | xcpretty
+    - xcodebuild test -workspace CIHub-Lab.xcworkspace -scheme CIHub-Lab -destination 'platform=iOS Simulator,name=iPhone 7,OS=10.2' | xcpretty -s
     - swiftlint
   only:
     - development
@@ -17,8 +17,8 @@ build_project:
 archive_project:
   stage: archive
   script:
-    - xcodebuild clean -project CIHub-Lab.xcodeproj -scheme CIHub-Lab | xcpretty
-    - xcodebuild test -project CIHub-Lab.xcodeproj -scheme CIHub-Lab -destination 'platform=iOS Simulator,name=iPhone 7,OS=10.2' | xcpretty -s
+    - xcodebuild clean -workspace CIHub-Lab.xcworkspace -scheme CIHub-Lab | xcpretty
+    - xcodebuild test -workspace CIHub-Lab.xcworkspace -scheme CIHub-Lab -destination 'platform=iOS Simulator,name=iPhone 7,OS=10.2' | xcpretty -s
     - fastlane beta
   only:
     - archive_fabric
