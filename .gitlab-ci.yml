@@ -11,7 +11,7 @@ build_project:
   only:
     - development
   tags:
-    - ServerRunner
+    - Server32820
     
 archive_project:
   stage: archive
@@ -22,4 +22,4 @@ archive_project:
   only:
     - archive_fabric
   tags:
-    - ServerRunner
+    - Server32820
