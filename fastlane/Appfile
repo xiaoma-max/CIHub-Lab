@@ -1,0 +1,7 @@
+app_identifier "appscore.max.CIHub-Lab" # The bundle identifier of your app
+apple_id "1941980718@qq.com" # Your Apple email address
+
+team_id "XX8A39ZTJ2" # Developer Portal Team ID
+
+# you can even provide different app identifiers, Apple IDs and team names per lane:
+# More information: https://github.com/fastlane/fastlane/blob/master/fastlane/docs/Appfile.md

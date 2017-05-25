@@ -8,6 +8,7 @@ build_project:
     - xcodebuild clean -workspace CIHub-Lab.xcworkspace -scheme CIHub-Lab | xcpretty
     - xcodebuild test -workspace CIHub-Lab.xcworkspace -scheme CIHub-Lab -destination 'platform=iOS Simulator,name=iPhone 7,OS=10.2' | xcpretty -s
     - swiftlint
+    - fastlane beta
   only:
     - development
   tags:
