@@ -11,7 +11,8 @@ build_project:
   only:
     - development
   tags:
-    - Server32820
+    - ios-test
+    - ios10.2
     
 archive_project:
   stage: archive
@@ -22,4 +23,5 @@ archive_project:
   only:
     - archive_fabric
   tags:
-    - Server32820
+    - ios-test
+    - ios10.2
