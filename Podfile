@@ -6,7 +6,7 @@ target 'CIHub-Lab' do
   use_frameworks!
 
   # Pods for CIHub-Lab
-  pod 'MaterialKit', '~> 0.4'
+  pod 'Material', '2.1.0'
 
   target 'CIHub-LabTests' do
     inherit! :search_paths
